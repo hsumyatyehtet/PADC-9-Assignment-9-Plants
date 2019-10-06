@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/rv_item_card_background"
+                android:layout_marginBottom="8dp"
+                android:layout_height="220dp">
+
+    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+               android:src="@drawable/ic_favorite_border"
+               android:layout_marginTop="16dp"
+               android:layout_marginLeft="16dp"
+               android:id="@+id/iv_favourite"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Monstera"
+              android:textColor="@color/colorPrimaryText"
+              android:layout_marginBottom="8dp"
+              android:id="@+id/tv_title"
+              android:layout_marginLeft="16dp"
+              android:textSize="24sp"
+              android:layout_above="@+id/iv_profile"/>
+
+    <!--<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">-->
+
+    <!--</RelativeLayout>-->
+
+    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+               android:src="@drawable/ic_favorite_border"
+               android:id="@+id/iv_profile"
+               android:layout_alignParentBottom="true"
+               android:layout_marginLeft="16dp"
+               android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="ba Kate B."
+              android:textSize="14sp"
+              android:textColor="@color/colorPrimaryText"
+              android:id="@+id/tv_profile_name"
+              android:layout_toRightOf="@+id/iv_profile"
+              android:layout_marginBottom="32dp"
+              android:layout_marginLeft="8dp"
+              android:layout_alignParentBottom="true"/>
+
+    <ImageView android:layout_width="150dp" android:layout_height="200dp"
+               android:layout_marginLeft="32dp"
+               android:layout_toRightOf="@id/tv_profile_name"
+               android:id="@+id/iv_plant_photo"
+               android:src="@drawable/leaf"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
